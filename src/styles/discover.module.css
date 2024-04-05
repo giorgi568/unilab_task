@@ -1,0 +1,42 @@
+.mainHeader{
+  /* color: red; */
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1.5em 5em;
+}
+.mainP{
+  text-align: justify;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  max-width: 380px;
+  align-items: flex-start;
+  gap: 5px;
+  overflow: hidden;
+}
+.cardHeader{
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.cardP{
+  margin: 0;
+  text-align: justify;
+  font-size: 0.9em;
+}
+.cardWrapper{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.seeall{
+  align-self: flex-end;
+  text-decoration: underline;
+  margin: 5px;
+  color: #C85100;
+}
