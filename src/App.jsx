@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import Discover from './components/Discover';
+import Watch from './components/Watch';
+import Tour from './components/Tour';
 
 function App() {
   const [navScroll, setNavScroll] = useState(false);
@@ -75,6 +77,8 @@ function App() {
         </div>
       </div>
       <Discover></Discover>
+      <Watch />
+      <Tour/>
     </div>
   );
 }

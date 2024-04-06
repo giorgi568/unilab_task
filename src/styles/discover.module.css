@@ -1,11 +1,12 @@
 .mainHeader{
-  /* color: red; */
+  color: #424244;
 }
 .content{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 1.5em 5em;
+  /* margin: 1.5em 5em; */
+  margin: 30px 80px;
 }
 .mainP{
   text-align: justify;
