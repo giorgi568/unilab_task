@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import styles from '../styles/discover.module.css';
+import Modal from './modal';
 
 function Discover() {
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <div className={styles.content}>
       <h3 className={styles.mainHeader}>Discover Our Services</h3>
@@ -10,7 +13,16 @@ function Discover() {
         destination selection, flight and accommodation bookings, and customized
         itineraries to individual preferences.
       </p>
-      <a className={styles.seeall} href="http://" target="_blank" rel="noopener noreferrer">see all</a>
+      <a
+        className={styles.seeall}
+        target='_blank'
+        rel='noopener noreferrer'
+        onClick={()=> {
+          setModalOpen(true)
+        }}
+      >
+        see all
+      </a>
       <div className={styles.cardWrapper}>
         <div className={styles.card}>
           <img
@@ -61,6 +73,7 @@ function Discover() {
           </p>
         </div>
       </div>
+      {modalOpen && <Modal setModalOpen={setModalOpen}/>}
     </div>
   );
 }

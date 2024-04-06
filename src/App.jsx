@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <div className='content'>
-        <header className={navScroll && 'scrolling'}>
+        <header className={navScroll ? 'scrolling' : ''}>
           <h2
             className='logoText'
             style={navScroll ? { color: '#424244' } : {}}
