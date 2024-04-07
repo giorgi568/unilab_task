@@ -11,6 +11,8 @@
 }
 .footer > div{
   max-width: 250px;
+  margin-bottom: 20px;
+  min-height: 200px;
 }
 .general{
   display: flex;
