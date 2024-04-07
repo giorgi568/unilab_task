@@ -1,0 +1,34 @@
+
+.content{
+  background-color: #E0E0E0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 80px;
+}
+
+.fieldset{
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.fieldset > select {
+  max-width: 1000px;
+  width: 40vw;
+  min-width: 250px;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  border: 0;
+  font-family: Roboto;
+  font-size: 1rem;
+}
+.btn{
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
