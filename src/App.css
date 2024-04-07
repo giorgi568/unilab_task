@@ -110,3 +110,9 @@ p {
   visibility: visible;
   opacity: 1;
 }
+.error {
+  color: red;
+  margin: 0;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
