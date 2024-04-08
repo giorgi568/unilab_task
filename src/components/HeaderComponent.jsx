@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+
 function HeaderComponent({ position }) {
   const [navScroll, setNavScroll] = useState(false);
   const changeScroll = () => {

@@ -3,6 +3,7 @@ import App from './App';
 import SignUp from './components/SignUp';
 import AuthenticatedRoute from './components/ProtectedRoute';
 import Services from './components/Services';
+import SignIn from './components/SignIn';
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -15,15 +16,19 @@ const Router = () => {
       element: <SignUp />,
     },
     {
+      path: 'signIn',
+      element: <SignIn />,
+    },
+    {
       path: 'services',
       element: <AuthenticatedRoute />,
       children: [
         {
           path: 'index',
-          element: <Services />
-        }
-      ]
-    }
+          element: <Services />,
+        },
+      ],
+    },
   ]);
 
   return <RouterProvider router={router} />;

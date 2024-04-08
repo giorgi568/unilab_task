@@ -3,7 +3,7 @@
 }
 
 .form{
-  min-height: 50vh;
+  /* min-height: 50vh; */
   display: flex;
   flex-direction: column;
   width: 100%;
