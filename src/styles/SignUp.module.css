@@ -1,5 +1,5 @@
 .content{
-  background-color: white;
+  background-color: #F6F6F6;
 }
 
 .form{
@@ -7,13 +7,16 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 5px;
+  gap: 0px;
   align-items: flex-start;
 }
 .container{
-  max-width: 500px;
+  max-width: 400px;
   min-width: 300px;
   margin: 30px;
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 10px;
 }
 .wrapper{
   display: flex;
@@ -29,6 +32,7 @@
   justify-content: center;
   border-radius: 50%;
   background-color: #E6EBFF;
+  margin-bottom: 10px;
 }
 .img{
   display: none;
