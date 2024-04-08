@@ -1,12 +1,14 @@
 import HeaderComponent from './HeaderComponent';
 import FooterInfo from './FooterInfo';
 import styles from '../styles/SignUp.module.css';
-import { useForm } from 'react-hook-form';
-import { object, string, ref, mixed } from 'yup';
-import { yupResolver } from '@hookform/resolvers/yup';
+import { useForm } from 'react-hook-form'; //library for handling forms
+import { object, string, ref, mixed } from 'yup'; //library for form validation
+import { yupResolver } from '@hookform/resolvers/yup'; //to integrate yup with react-hook-form
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function SignUp() {
+  const navigate = useNavigate();
   const [imageUrl, setImageUrl] = useState('');
 
   const handleFileInputChange = (event) => {
@@ -39,7 +41,7 @@ function SignUp() {
       'fileType',
       'Only imgae files are allowed',
       (value) => {
-        if (value) {
+        if (value[0]) {
           const fileType = value['0'].type;
           return fileType === 'image/png';
         }
@@ -57,18 +59,20 @@ function SignUp() {
   });
   const onSubmit = (data) => {
     console.log(data);
+    localStorage.setItem('status', true);
     localStorage.setItem('fname', JSON.stringify(data.fname));
     localStorage.setItem('lname', JSON.stringify(data.lname));
     localStorage.setItem('email', JSON.stringify(data.email));
     localStorage.setItem('password', JSON.stringify(data.password));
     const file = data.formImg['0'];
-    console.log(file)
+    // console.log(file);
     const reader = new FileReader();
     reader.onload = (event) => {
       const imageDataUrl = event.target.result;
       localStorage.setItem('image', imageDataUrl);
     };
     reader.readAsDataURL(file);
+    navigate('/');
   };
   return (
     <div className={styles.content}>
