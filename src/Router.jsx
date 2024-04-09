@@ -4,6 +4,8 @@ import SignUp from './components/SignUp';
 import AuthenticatedRoute from './components/ProtectedRoute';
 import Services from './components/Services';
 import SignIn from './components/SignIn';
+import Flights from './components/Flights';
+import Stays from './components/Stays';
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -24,8 +26,15 @@ const Router = () => {
       element: <AuthenticatedRoute />,
       children: [
         {
-          path: 'index',
+          path: '/services',
           element: <Services />,
+          children: [
+            { path: '/services/flights', element: <Flights /> },
+            {
+              path: '/services/stays',
+              element: <Stays />,
+            },
+          ],
         },
       ],
     },

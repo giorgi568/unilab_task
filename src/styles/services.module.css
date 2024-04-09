@@ -1,0 +1,22 @@
+.content{
+  padding: 3vw 6vw;
+  background-color: #F6F6F6;
+}
+
+.btn{
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #424244;
+}
+.btn:hover{
+  color: white;
+}
+
+.nav{
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+}

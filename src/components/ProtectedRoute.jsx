@@ -12,9 +12,12 @@ function AuthenticatedRoute() {
       }
       return false;
     };
-    if (!isAuthenticated()) {
+    if (!isAuthenticated() && localStorage.getItem('fname')) {
+      navigate('signIn');
+    } else if (!isAuthenticated()) {
       navigate('/signUp');
     }
+    //we are checking fname to find out if user is already registered and just signed out
   });
 
   return (
