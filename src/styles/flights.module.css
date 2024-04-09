@@ -1,6 +1,11 @@
-.content{
+.content {
   padding: 3vw 0px;
   min-height: 40vh;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .inputData {
@@ -23,14 +28,14 @@
   padding: 0;
   cursor: pointer;
 }
-.inputWrapper{
+.inputWrapper {
   display: flex;
   position: relative;
   width: 200px;
   background-color: white;
   padding: 10px 20px;
   border-radius: 10px;
-  border: 1px solid #FF6700;
+  border: 1px solid #ff6700;
 }
 .inputWrapper > label {
   display: flex;
@@ -43,10 +48,10 @@
   align-items: center;
   gap: 5px;
 }
-.queries{
+.queries {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 .queries > button {
   font-weight: 400;
@@ -55,7 +60,7 @@
   border-radius: 10px;
 }
 
-.filters{
+.filters {
   margin: 3vw 0px;
   padding: 20px 20px;
   border-radius: 10px;
@@ -64,16 +69,19 @@
   width: fit-content;
   flex-direction: column;
   width: 300px;
+  gap: 20px;
 }
 
-.stopsFilter > div {
+.stopsFilter > div,
+.durationFilter > div,
+.priceFilter > div {
   display: flex;
   justify-content: space-between;
   font-size: 1.3rem;
   font-weight: 400;
   cursor: pointer;
 }
-.stopsFilter{
+.stopsFilter {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -83,4 +91,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 5px;
+}
+.flightsInfo{
+  flex-grow: 1;
 }
