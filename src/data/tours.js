@@ -1,5 +1,3 @@
-// import barcelona from '/tourImg/barcelona.png'
-
 const tours = [
   {
     name: 'Barcelona, Spain',

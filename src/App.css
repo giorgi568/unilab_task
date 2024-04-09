@@ -65,6 +65,7 @@ h3 {
   font-size: 2rem;
   font-weight: 500;
 }
+
 .visitContainer {
   height: 80%;
   display: flex;
@@ -122,4 +123,21 @@ p {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+}
+
+/* styling for slider */
+.bar-left, .bar-inner, .bar-right{
+  background-color: #ff6700!important;
+  height: 1px !important;
+  padding: 1px !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.thumb::before{
+  box-shadow: none !important;
+  border: 2px solid #ff6700 !important;
+}
+.caption > span{
+  background-color: #ff6700 !important;
+  box-shadow: none !important;
 }

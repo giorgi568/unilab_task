@@ -1,6 +1,7 @@
 .content{
   padding: 3vw 6vw;
   background-color: #F6F6F6;
+  min-height: 40vh;
 }
 
 .btn{
