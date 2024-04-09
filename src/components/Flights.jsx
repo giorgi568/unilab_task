@@ -23,6 +23,8 @@ function Flights() {
     set_maxValuePrice(e.maxValue);
   };
 
+  const [routes, setRoutes] = useState(flightRoutes.slice(0, 8));
+
   return (
     <div className={styles.content}>
       <div className={styles.queries}>
@@ -129,11 +131,18 @@ function Flights() {
           </div>
         </div>
         <div className={styles.flightsInfo}>
-          {flightRoutes.map((route, index) => {
-            return(
-              <FlightCard flightObj={route} key={index} />
-            )
+          {routes.map((route, index) => {
+            return <FlightCard flightObj={route} key={index} />;
           })}
+          <button
+            style={{ width: '100%' }}
+            onClick={(e) => {
+              setRoutes(flightRoutes);
+              e.target.style.display = 'none';
+            }}
+          >
+            Show More
+          </button>
         </div>
       </div>
     </div>
