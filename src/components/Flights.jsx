@@ -31,44 +31,44 @@ function Flights() {
     two: true,
   });
 
-  const filterUpdater = () => {
-    //filtering for stops
-    let filteredRoutes = flightRoutes.filter((route) => {
-      if (stopsValue.direct && route.stops === 0) {
-        return true;
-      }
-      if (stopsValue.one && route.stops === 1) {
-        return true;
-      }
-      if (stopsValue.two && route.stops === 2) {
-        return true;
-      }
-      return false;
-    });
-
-    //filtering for duration and price
-    filteredRoutes = filteredRoutes.filter((route) => {
-      if (
-        route.duration >= minValueDuration &&
-        route.duration <= maxValueDuration &&
-        route.price >= minValuePrice &&
-        route.price <= maxValuePrice
-      ) {
-        return true;
-      }
-
-      return false;
-    });
-
-    if (filteredRoutes.length >= 15) {
-      setRoutes(filteredRoutes.slice(0, 8));
-      //so the first time it renders only 8 route
-    } else {
-      setRoutes(filteredRoutes);
-    }
-  };
-
   useEffect(() => {
+    const filterUpdater = () => {
+      //filtering for stops
+      let filteredRoutes = flightRoutes.filter((route) => {
+        if (stopsValue.direct && route.stops === 0) {
+          return true;
+        }
+        if (stopsValue.one && route.stops === 1) {
+          return true;
+        }
+        if (stopsValue.two && route.stops === 2) {
+          return true;
+        }
+        return false;
+      });
+
+      //filtering for duration and price
+      filteredRoutes = filteredRoutes.filter((route) => {
+        if (
+          route.duration >= minValueDuration &&
+          route.duration <= maxValueDuration &&
+          route.price >= minValuePrice &&
+          route.price <= maxValuePrice
+        ) {
+          return true;
+        }
+
+        return false;
+      });
+
+      if (filteredRoutes.length >= 15) {
+        setRoutes(filteredRoutes.slice(0, 8));
+        //so the first time it renders only 8 route
+      } else {
+        setRoutes(filteredRoutes);
+      }
+    };
+    
     filterUpdater();
   }, [
     stopsValue,

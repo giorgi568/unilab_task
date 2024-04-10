@@ -48,6 +48,7 @@
   align-items: center;
   gap: 5px;
 }
+
 .queries {
   display: flex;
   gap: 10px;
@@ -73,26 +74,47 @@
   height: fit-content;
 }
 
-.stopsFilter > div,
-.durationFilter > div,
-.priceFilter > div {
+.filtersHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+}
+.filtersHeader > hr {
+  width: 100%;
+  border-color: #ff6700;
+  border-style: solid;
+}
+.filtersHeader > h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.ratingFilter > nav {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   font-size: 1.3rem;
   font-weight: 400;
   cursor: pointer;
 }
-.stopsFilter {
+.ratingFilter {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-.stopsFilter > nav {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  gap: 5px;
 }
-.flightsInfo {
+.ratingFilter > h4 {
+  font-size: 1.2rem;
+}
+.ratingFilter > nav > div > input {
+  height: 15px;
+  width: 15px;
+}
+.ratingFilter > nav > div > label {
+  font-size: 1rem;
+}
+
+.resortInfo{
   flex-grow: 1;
 }
