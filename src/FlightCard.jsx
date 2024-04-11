@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from '../styles/flightCard.module.css';
+import styles from './styles/flightCard.module.css';
 
 function FlightCard({ flightObj }) {
   const blocks = Array.from({ length: flightObj.stops });

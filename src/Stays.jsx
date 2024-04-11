@@ -1,6 +1,6 @@
-import styles from '../styles/stays.module.css';
+import styles from './styles/stays.module.css';
 import StaysCard from './StaysCard';
-import propertiesData from '../data/properties';
+import propertiesData from './data/properties';
 import { useEffect, useState } from 'react';
 
 function Stays() {

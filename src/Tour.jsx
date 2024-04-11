@@ -1,7 +1,7 @@
 import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback } from 'react';
-import styles from '../styles/tour.module.css';
-import tours from '../data/tours';
+import styles from './styles/tour.module.css';
+import tours from './data/tours';
 import TourCard from './TourCard';
 
 function Tour() {

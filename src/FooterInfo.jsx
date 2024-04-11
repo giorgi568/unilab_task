@@ -1,4 +1,4 @@
-import styles from '../styles/footerInfo.module.css';
+import styles from './styles/footerInfo.module.css';
 
 function FooterInfo() {
   return (

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import styles from '../styles/flights.module.css';
+import styles from './styles/flights.module.css';
 import MultiRangeSlider from 'multi-range-slider-react';
-import flightRoutes from '../data/flightRoutes';
+import flightRoutes from './data/flightRoutes';
 import FlightCard from './FlightCard';
 
 function Flights() {
@@ -68,7 +68,7 @@ function Flights() {
         setRoutes(filteredRoutes);
       }
     };
-    
+
     filterUpdater();
   }, [
     stopsValue,

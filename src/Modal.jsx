@@ -1,4 +1,4 @@
-import styles from '../styles/modal.module.css';
+import styles from './styles/modal.module.css';
 import PropTypes from 'prop-types';
 
 function Modal({ setModalOpen }) {

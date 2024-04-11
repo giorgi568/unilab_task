@@ -1,6 +1,6 @@
 import HeaderComponent from './HeaderComponent';
 import FooterInfo from './FooterInfo';
-import styles from '../styles/SignUp.module.css';
+import styles from './styles/SignUp.module.css';
 import { useForm } from 'react-hook-form'; //library for handling forms
 import { object, string, ref, mixed } from 'yup'; //library for form validation
 import { yupResolver } from '@hookform/resolvers/yup'; //to integrate yup with react-hook-form

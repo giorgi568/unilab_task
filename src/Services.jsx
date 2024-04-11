@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import styles from '../styles/services.module.css';
+import styles from './styles/services.module.css';
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 import HeaderComponent from './HeaderComponent';

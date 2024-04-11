@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
-import styles from '../styles/resort.module.css';
-import properties from '../data/properties';
+import styles from './styles/resort.module.css';
+import properties from './data/properties';
 
 function Resort() {
   let { id } = useParams();

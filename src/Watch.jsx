@@ -1,5 +1,5 @@
 import ReactPlayer from 'react-player';
-import styles from '../styles/watch.module.css'
+import styles from './styles/watch.module.css'
 
 function Watch() {
   return (

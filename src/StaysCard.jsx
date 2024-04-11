@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from '../styles/staysCard.module.css';
+import styles from './styles/staysCard.module.css';
 import { useNavigate } from 'react-router-dom';
 
 function StaysCard({ propertiesObj }) {

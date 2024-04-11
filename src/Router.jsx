@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
-import SignUp from './components/SignUp';
-import AuthenticatedRoute from './components/ProtectedRoute';
-import Services from './components/Services';
-import SignIn from './components/SignIn';
-import Flights from './components/Flights';
-import Stays from './components/Stays';
-import Resort from './components/Resort';
+import SignUp from './SignUp';
+import AuthenticatedRoute from './ProtectedRoute';
+import Services from './Services';
+import SignIn from './SignIn';
+import Flights from './Flights';
+import Stays from './Stays';
+import Resort from './Resort';
 
 const Router = () => {
   const router = createBrowserRouter([

@@ -1,11 +1,11 @@
 import './App.css';
-import Discover from './components/Discover';
-import Watch from './components/Watch';
-import Tour from './components/Tour';
-import Blogs from './components/Blogs';
-import BookTrip from './components/BookTrip';
-import FooterInfo from './components/FooterInfo';
-import HeaderComponent from './components/HeaderComponent';
+import Discover from './Discover';
+import Watch from './Watch';
+import Tour from './Tour';
+import Blogs from './Blogs';
+import BookTrip from './BookTrip';
+import FooterInfo from './FooterInfo';
+import HeaderComponent from './HeaderComponent';
 
 function App() {
   return (

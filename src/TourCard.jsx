@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from '../styles/tourCard.module.css';
+import styles from './styles/tourCard.module.css';
 
 function TourCard({ tourObj }) {
   return (

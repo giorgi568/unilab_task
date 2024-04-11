@@ -1,4 +1,4 @@
-import styles from '../styles/bookTrip.module.css';
+import styles from './styles/bookTrip.module.css';
 
 function BookTrip() {
   return (
