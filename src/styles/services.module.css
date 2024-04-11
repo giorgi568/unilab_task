@@ -1,10 +1,11 @@
-.content{
+.content {
   padding: 3vw 6vw;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   min-height: 40vh;
+  overflow: hidden;
 }
 
-.btn{
+.btn {
   font-size: 1rem;
   padding: 10px 20px;
   border-radius: 10px;
@@ -12,12 +13,19 @@
   background-color: transparent;
   color: #424244;
 }
-.btn:hover{
+.btn:hover {
   color: white;
 }
 
-.nav{
+.nav {
   max-width: 800px;
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 550px) {
+  .nav {
+    max-width: 100%;
+    overflow-x: scroll;
+  }
 }

@@ -3,6 +3,15 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 function HeaderComponent({ position }) {
+  const [matches, setMatches] = useState(
+    window.matchMedia('(max-width: 800px)').matches
+  );
+  useEffect(() => {
+    window
+      .matchMedia('(max-width: 800px)')
+      .addEventListener('change', (e) => setMatches(e.matches));
+  }, []);
+
   const [authorized, setAuthorized] = useState(false);
   const isAuthorized = () => {
     const status = localStorage.getItem('status');
@@ -95,6 +104,15 @@ function HeaderComponent({ position }) {
                 Sign Out
               </a>
               <span className='line'></span>
+              {matches && (
+                <div className='burger'>
+                  <Link to='/'>Home</Link>
+                  <a>About us</a>
+                  <a>Blogs</a>
+                  <Link to='/services'>Our services</Link>
+                  <a>Our offers</a>
+                </div>
+              )}
             </div>
           ) : (
             <div className='tooltip'>
@@ -102,6 +120,15 @@ function HeaderComponent({ position }) {
               <span className='line'></span>
               <Link to='/signUp'>Sign Up</Link>
               <span className='line'></span>
+              {matches && (
+                <div className='burger'>
+                  <Link to='/'>Home</Link>
+                  <a>About us</a>
+                  <a>Blogs</a>
+                  <Link to='/services'>Our services</Link>
+                  <a>Our offers</a>
+                </div>
+              )}
             </div>
           )}
         </div>

@@ -131,3 +131,27 @@
   color: #424244;
   text-align: left;
 }
+
+@media (max-width: 800px) {
+  .bigImage{
+    width: 300px;
+  }
+  .smallImages{
+    width: fit-content;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .smallImage{
+    border-radius: 2px;
+    width: 200px;
+  }
+  .priceWrapper{
+    max-height: 40px;
+    flex-wrap: wrap;
+  }
+  .box{
+    min-width: fit-content;
+  }
+}

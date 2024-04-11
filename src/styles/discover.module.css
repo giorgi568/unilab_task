@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: flex-start;
   /* margin: 1.5em 5em; */
-  margin: 30px 80px;
+  margin: 3vw 6vw;
 }
 .mainP{
   text-align: justify;
@@ -41,4 +41,8 @@
   margin: 5px;
   color: #C85100;
   cursor: pointer;
+}
+.img {
+  max-width: 400px;
+  width: 100%;
 }
