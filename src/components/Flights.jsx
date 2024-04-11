@@ -117,7 +117,6 @@ function Flights() {
                     id='direct'
                     defaultChecked
                     onChange={(e) => {
-                      console.log(e.target.checked);
                       setStopsValue((prevState) => ({
                         ...prevState,
                         direct: e.target.checked,

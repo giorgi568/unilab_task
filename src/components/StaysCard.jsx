@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import styles from '../styles/staysCard.module.css';
+import { useNavigate } from 'react-router-dom';
 
 function StaysCard({ propertiesObj }) {
+  const navigate = useNavigate();
   const stars = Array.from({ length: propertiesObj.rating });
   return (
     <div className={styles.card}>
@@ -44,7 +46,15 @@ function StaysCard({ propertiesObj }) {
           </div>
         </div>
 
-        <button className={styles.btn}>Show details</button>
+        <button
+          className={styles.btn}
+          onClick={(e) => {
+            e.preventDefault();
+            navigate(`/services/stays/${propertiesObj.id}`);
+          }}
+        >
+          Show details
+        </button>
       </div>
     </div>
   );

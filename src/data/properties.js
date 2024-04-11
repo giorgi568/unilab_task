@@ -1,5 +1,6 @@
 const properties = [
   {
+    id: 1,
     name: 'New Zealand Resort',
     location: 'New Zealand, Auckland',
     distance: '1 km away from center',
@@ -10,6 +11,7 @@ const properties = [
     image: '/house.png',
   },
   {
+    id: 2,
     name: 'Tropical Paradise Resort',
     location: 'Hawaii, Honolulu',
     distance: '500 meters away from beach',
@@ -20,16 +22,18 @@ const properties = [
     image: '/house.png',
   },
   {
+    id: 3,
     name: 'Sandy Shores Retreat',
     location: 'Australia, Gold Coast',
     distance: '100 meters away from beach',
     description:
       'Modern beachfront villa with panoramic ocean views. Includes private pool and BBQ area.',
-    rating: 2,
+    rating: 5,
     price: 750,
     image: '/house.png',
   },
   {
+    id: 4,
     name: 'Mountain Escape Lodge',
     location: 'Switzerland, Interlaken',
     distance: 'In the heart of the Alps',
@@ -40,6 +44,7 @@ const properties = [
     image: '/house.png',
   },
   {
+    id: 5,
     name: 'Island Oasis Resort',
     location: 'Maldives, Male',
     distance: 'Overwater bungalow',
@@ -50,16 +55,18 @@ const properties = [
     image: '/house.png',
   },
   {
+    id: 6,
     name: 'Coastal Hideaway Resort',
     location: 'California, Big Sur',
     distance: 'Cliffside location',
     description:
       'Secluded retreat perched on a cliff overlooking the Pacific Ocean. Features private hot tub and fireplace.',
-    rating: 1,
+    rating: 4,
     price: 550,
     image: '/house.png',
   },
   {
+    id: 7,
     name: 'Jungle Paradise Resort',
     location: 'Costa Rica, Manuel Antonio',
     distance: 'Surrounded by rainforest',
@@ -70,6 +77,7 @@ const properties = [
     image: '/house.png',
   },
   {
+    id: 8,
     name: 'Desert Oasis Resort',
     location: 'United Arab Emirates, Dubai',
     distance: 'Amidst sand dunes',
@@ -80,16 +88,18 @@ const properties = [
     image: '/house.png',
   },
   {
+    id: 9,
     name: 'Lakefront Serenity Resort',
     location: 'Canada, British Columbia',
     distance: 'On the shores of a lake',
     description:
       'Tranquil resort nestled on the shores of a pristine mountain lake. Perfect for fishing and kayaking.',
-    rating: 2,
+    rating: 5,
     price: 650,
     image: '/house.png',
   },
   {
+    id: 10,
     name: 'Ski Chalet Retreat',
     location: 'France, Chamonix',
     distance: 'Ski-in/ski-out access',
@@ -100,6 +110,7 @@ const properties = [
     image: '/house.png',
   },
   {
+    id: 11,
     name: 'Beachfront Bliss Resort',
     location: 'Thailand, Phuket',
     distance: 'Steps away from the beach',
@@ -110,6 +121,7 @@ const properties = [
     image: '/house.png',
   },
   {
+    id: 12,
     name: 'Rustic Mountain Lodge',
     location: 'Colorado, Aspen',
     distance: 'Nestled in the Rocky Mountains',
@@ -120,6 +132,7 @@ const properties = [
     image: '/house.png',
   },
   {
+    id: 13,
     name: 'Tropical Rainforest Retreat',
     location: 'Brazil, Amazon Rainforest',
     distance: 'Deep in the jungle',
@@ -130,16 +143,18 @@ const properties = [
     image: '/house.png',
   },
   {
+    id: 14,
     name: 'Seaside Villa Resort',
     location: 'Italy, Amalfi Coast',
     distance: 'Overlooking the Mediterranean',
     description:
       'Elegant villa perched on the cliffs of the Amalfi Coast. Features breathtaking sea views and gourmet dining.',
-    rating: 3,
+    rating: 5,
     price: 800,
     image: '/house.png',
   },
   {
+    id: 15,
     name: 'Serengeti Safari Camp',
     location: 'Tanzania, Serengeti National Park',
     distance: 'Amidst the African savanna',

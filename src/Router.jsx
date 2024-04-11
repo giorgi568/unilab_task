@@ -6,6 +6,7 @@ import Services from './components/Services';
 import SignIn from './components/SignIn';
 import Flights from './components/Flights';
 import Stays from './components/Stays';
+import Resort from './components/Resort';
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const Router = () => {
             {
               path: '/services/stays',
               element: <Stays />,
+            },
+            {
+              path: '/services/stays/:id',
+              element: <Resort />,
             },
           ],
         },
