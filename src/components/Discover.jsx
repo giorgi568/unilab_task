@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from '../styles/discover.module.css';
-import Modal from './Modal';
+import Modal from './Modal.jsx';
 
 function Discover() {
   const [modalOpen, setModalOpen] = useState(false);
